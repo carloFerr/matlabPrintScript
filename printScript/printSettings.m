@@ -9,6 +9,7 @@ if (~isempty(lgd1))
 end
 
 set(findall(ttl1, '-property', 'FontSize'), 'FontSize', 24)
+set(findall(ttl1, '-property', 'Interpreter'), 'Interpreter', 'latex')
 
 end
 
