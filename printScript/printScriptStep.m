@@ -1,4 +1,4 @@
-function [] = printScriptStep(graphTitle, transferFunction)
+function [] = printScriptStep(graphTitle, transferFunction, saveFig)
 
 hfig1 = figure;
 
@@ -8,7 +8,7 @@ h = findobj(gcf, 'Type', 'line');
 set(h, 'LineWidth', 2);
 ttl1 = title(graphTitle);
 
-printSettings(hfig1, ttl1, '');
+printSettings(graphTitle, hfig1, ttl1, '', saveFig);
 
 end
 

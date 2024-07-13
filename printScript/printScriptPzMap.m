@@ -1,4 +1,4 @@
-function [] = printScriptPzMap(graphTitle, transferFunction)
+function [] = printScriptPzMap(graphTitle, transferFunction, saveFig)
 
 hfig1 = figure;
 
@@ -9,7 +9,7 @@ ttl1 = title(graphTitle);
 % xlabel('Real Axis [$seconds^-1$]', 'Interpreter', 'latex')
 % ylabel('Imaginary Axis [$seconds^-1$]', 'Interpreter', 'latex')
 
-printSettings(hfig1, ttl1, '');
+printSettings(graphTitle, hfig1, ttl1, '', saveFig);
 
 end
 
