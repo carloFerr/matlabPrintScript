@@ -1,5 +1,5 @@
-function [] = printScriptPlot4(	graphTitle, xAxis1, yAxis1, xAxis2, yAxis2, xAxis3, yAxis3, xAxis4, yAxis4, xAxis5, yAxis5, ...
-									graphXLabel, graphYLabel, graphLegend1, graphLegend2, graphLegend3, graphLegend4, graphLegend5, saveFig)
+function [] = printScriptPlot4(	graphTitle, xAxis1, yAxis1, xAxis2, yAxis2, xAxis3, yAxis3, xAxis4, yAxis4, ...
+									graphXLabel, graphYLabel, graphLegend1, graphLegend2, graphLegend3, graphLegend4, saveFig)
 
 	hfig1 = figure;
 	hold on, grid on;
