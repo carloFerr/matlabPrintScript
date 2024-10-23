@@ -2,7 +2,7 @@ function [] = printScriptPlot4(	graphTitle, xAxis1, yAxis1, xAxis2, yAxis2, xAxi
 									graphXLabel, graphYLabel, graphLegend1, graphLegend2, graphLegend3, graphLegend4, saveFig)
 
 	hfig1 = figure;
-	hold on, grid on;
+	hold on, grid on; box on;
 	plot(xAxis1, yAxis1, "lineWidth", 2);
 	if (~isempty(xAxis2) && ~isempty(yAxis2))
 		plot(xAxis2, yAxis2, "lineWidth", 2);

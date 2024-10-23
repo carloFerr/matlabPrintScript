@@ -1,7 +1,7 @@
 function [hfig1, ttl1] = printScriptMultiplePlot(title1, xLabel1, yLabel1, tLR, tLL)
 
 	hfig1 = figure;
-	hold on, grid on;
+	hold on, grid on; box on;
 	ttl1 = title(title1);
 	xlabel(xLabel1);
 	ylabel(yLabel1);

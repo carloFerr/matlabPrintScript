@@ -1,7 +1,7 @@
 function [] = printScriptPlot1(graphTitle, xAxis1, yAxis1, graphXLabel, graphYLabel, graphLegend1, saveFig)
 
 	hfig1 = figure;
-	hold on, grid on;
+	hold on, grid on; box on;
 	plot(xAxis1, yAxis1, "lineWidth", 2);
 	ttl1 = title(graphTitle);
 	xlabel(graphXLabel);

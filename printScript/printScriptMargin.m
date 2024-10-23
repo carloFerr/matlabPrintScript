@@ -5,7 +5,7 @@ function [] = printScriptMargin(graphTitle, transferFunction, saveFig)
 	hfig1 = figure;
 	
 	margin(transferFunction);
-	grid on;
+	grid on; box on;
 	h = findobj(gcf, 'Type', 'line');
 	set(h, 'LineWidth', 2);
 	Gm_dB = 20 * log10(Gm);

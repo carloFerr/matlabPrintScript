@@ -1,7 +1,7 @@
 function [] = printScriptPzMap(graphTitle, transferFunction, saveFig)
 
 hfig1 = figure;
-
+box on;
 pzmap(transferFunction);
 h = findobj(gcf, 'Type', 'line');
 set(h, 'LineWidth', 2);
