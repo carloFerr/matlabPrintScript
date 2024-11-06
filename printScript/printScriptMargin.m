@@ -1,4 +1,4 @@
-function [] = printScriptMargin(graphTitle, transferFunction, saveFig)
+function [] = printScriptMargin(graphTitle, transferFunction, axisEqualFlag, saveFig)
 
 	[Gm, Pm, Wcg, Wcp] = margin(transferFunction);
 	
@@ -14,7 +14,7 @@ function [] = printScriptMargin(graphTitle, transferFunction, saveFig)
 	
 	ttl1 = title(graphTitleFinal);
 	
-	printSettings(graphTitle, hfig1, ttl1, '', saveFig);
+	printSettings(graphTitle, hfig1, ttl1, '', axisEqualFlag, saveFig);
 
 end
 

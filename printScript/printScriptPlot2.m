@@ -1,5 +1,5 @@
 function [] = printScriptPlot2(	graphTitle, xAxis1, yAxis1, xAxis2, yAxis2, ...
-									graphXLabel, graphYLabel, graphLegend1, graphLegend2, saveFig)
+									graphXLabel, graphYLabel, graphLegend1, graphLegend2, axisEqualFlag, saveFig)
 
 	hfig1 = figure;
 	hold on, grid on; box on;
@@ -19,7 +19,7 @@ function [] = printScriptPlot2(	graphTitle, xAxis1, yAxis1, xAxis2, yAxis2, ...
 	
 	lgd1 = legend(graphLegend1);
 	
-	printSettings(graphTitle, hfig1, ttl1, lgd1, saveFig);
+	printSettings(graphTitle, hfig1, ttl1, lgd1, axisEqualFlag, saveFig);
 
 end
 

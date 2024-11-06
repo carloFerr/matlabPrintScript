@@ -37,7 +37,7 @@ function [] = printScriptPlot5(	graphTitle, xAxis1, yAxis1, xAxis2, yAxis2, xAxi
 	
 	lgd1 = legend(graphLegend1);
 	
-	printSettings(graphTitle, hfig1, ttl1, lgd1, saveFig);
+	printSettings(graphTitle, hfig1, ttl1, lgd1, axisEqualFlag, saveFig);
 
 end
 
