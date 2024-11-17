@@ -1,4 +1,4 @@
-# MatlabPrintScript
+![image](https://github.com/user-attachments/assets/c74b0885-d192-469d-8003-8fdbad5c5652)# MatlabPrintScript
 
 Contains all necessary code to print `MATLAB figures` with `LaTeX` fonts.
 
@@ -28,8 +28,8 @@ Keep in mind the following idea: you will only need to write in one line (printS
 ### Plot Options
 
 1. **Title:** Insert the title of the plot as `'Plot Title'`. Do not use `""` if you want to save the figure with the saveFigure option.
-2. **X-axis line:** 
-3. **Y-axis line:** 
+2. **X-axis line:** Put here the `data vector` for the X - Axis plane.
+3. **Y-axis line:** Put here the `data vector` for the Y - Axis plane. Always make sure the size of the two vectors is the same.
 4. **X-axis caption:** For example, if your X-axis is time, insert 'time [s]'. Do not use `''` with the `saveFigure` option.
 5. **Y-axis caption:** For example, if your Y-axis is velocity, insert 'velocity [m/s]'. Do not use `''` with the saveFigure option.
 6. **Line Legend caption:** For example, if the line represents the velocity of a car, write 'Car Velocity'. Do not use `''` with the saveFigure option.
