@@ -52,6 +52,14 @@ Always keep in mind that:
 printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experimentTime, dataSingleE.beta*180/pi, "Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
 ```
 
+You can also go to new line as you would normally do in matlab:
+
+```
+printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experimentTime, dataSingleE.beta*180/pi, ...
+	"Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
+```
+
+
 ### - Plot Racetrack Bounds and Car Trajectory (XY Plot, with axis equal)
 
 ```
