@@ -38,3 +38,27 @@ Keep in mind the following idea: you will only need to write in one line (printS
 By default, all plots are saved with grid on, box on, and hold on options. You can always add any other options after the line used to print the plot. However, you must not use the saveFigures option, otherwise you will get an error.
 
 Always keep in mind that any of these characters will be interpreted as LaTeX font. Feel free to write symbols and expressions as you do in LaTeX.
+
+## Examples
+
+### - Plot a variabl in time domain
+
+printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experimentTime, dataSingleE.beta*180/pi, "Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
+
+### - Plot Racetrack Bounds and Car Trajectory (XY Plot, with axis equal)
+
+clear all
+close all
+clc
+
+saveFigures = 0;
+
+%%
+
+limitsR = readtable("Melbourne_TrackLinesDx.csv");
+limitsL = readtable("Melbourne_TrackLinesSx.csv");
+raceLine = readtable("Melbourne_Race_Traj_MinLen.csv");
+
+
+printScriptPlot3('Optimized Trajectory', limitsR.X, limitsR.Y, limitsL.X, limitsL.Y, raceLine.x_m, raceLine.y_m, "X [m]", "Y [m]", "Limits Right", "Limits Left", "Racing Line", 1, saveFigures);
+
