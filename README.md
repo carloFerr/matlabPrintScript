@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c74b0885-d192-469d-8003-8fdbad5c5652)# MatlabPrintScript
+# MatlabPrintScript
 
 Contains all necessary code to print `MATLAB figures` with `LaTeX` fonts.
 
