@@ -2,14 +2,14 @@
 
 Contains all necessary code to print Matlab figures with LaTeX fonts.
 
-It allows to print plots, multiple plots, margins, pzmaps, grids, axis equal, and an option to save the figures in different format files (.fig, .svg, .eps, .png). It also supports colorbars (future updates).
+It allows to print plots, multiple plots, margins, pzmaps, grids, axis equal, and an option to save the figures in different format files (`.fig`, `.svg`, `.eps`, `.png`). It also supports colorbars (future updates).
 
 ## Set Up Guide
 
 Just follow this guide:
 
-1. Add this repository as a SUBMODULE to your main project repository.
-2. Simply add the "matlabPrintScript" folder to your Matlab path, or add it to your Matlab project file (.prj).
+1. Add this repository as a `SUBMODULE` to your main project repository.
+2. Simply add the `matlabPrintScript` folder to your Matlab path, or add it to your Matlab project file (`.prj`).
 
 ## Guide: How to Plot on Figures
 
@@ -37,16 +37,21 @@ Keep in mind the following idea: you will only need to write in one line (printS
 
 By default, all plots are saved with grid on, box on, and hold on options. You can always add any other options after the line used to print the plot. However, you must not use the saveFigures option, otherwise you will get an error.
 
-Always keep in mind that any of these characters will be interpreted as LaTeX font. Feel free to write symbols and expressions as you do in LaTeX.
+Always keep in mind that:
+- any of these characters will be interpreted as LaTeX font. To change it, change the `printSettings.m` file
+- Feel free to write symbols and expressions as you do in LaTeX.
 
 ## Examples
 
 ### - Plot a variabl in time domain
 
+```
 printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experimentTime, dataSingleE.beta*180/pi, "Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
+```
 
 ### - Plot Racetrack Bounds and Car Trajectory (XY Plot, with axis equal)
 
+```
 clear all
 close all
 clc
@@ -61,4 +66,7 @@ raceLine = readtable("Melbourne_Race_Traj_MinLen.csv");
 
 
 printScriptPlot3('Optimized Trajectory', limitsR.X, limitsR.Y, limitsL.X, limitsL.Y, raceLine.x_m, raceLine.y_m, "X [m]", "Y [m]", "Limits Right", "Limits Left", "Racing Line", 1, saveFigures);
+```
+
+
 
