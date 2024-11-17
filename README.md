@@ -21,12 +21,13 @@ Keep in mind the following idea: you will only need to write in one line (printS
     - To plot a line, write `printScriptPlot`.
     - For a margin/bode diagram, type `printScriptMargin`.
     - To plot 2, 3, 4, or 5 lines on a single figure, type `printScriptPlot2`, `printScriptPlot3`, `printScriptPlot4`, or `printScriptPlot5`.
+    - If you don't know how many lines there will be in your plot, use `printScriptMultiplePlots` in a for loop (see examples).
 
-2. Now, the following options must be added. If you want to skip one, simply put '' and the command will be ignored.
+2. Now, the following options must be added. If you want to skip one, simply put `''` and the command will be ignored.
 
 ### Plot Options
 
-1. **Title:** Insert the title of the plot as 'Plot Title'. Do not use "" if you want to save the figure with the saveFigure option.
+1. **Title:** Insert the title of the plot as `'Plot Title'`. Do not use `""` if you want to save the figure with the saveFigure option.
 2. **X-axis line:** 
 3. **Y-axis line:** 
 4. **X-axis caption:** For example, if your X-axis is time, insert 'time [s]'. Do not use '' with the saveFigure option.
@@ -35,15 +36,17 @@ Keep in mind the following idea: you will only need to write in one line (printS
 7. **Axis equal option:** In the case of gg-plots or XY plots, you may desire to have the "axis equal" option. Insert 0 if you don't need it, or 1 if you need it.
 8. **Save Figures option:** If you want to save your figures in .fig, .eps, .svg, and .png formats, insert 1 in this field; otherwise, insert 0. NOTE: Any figure will be saved with the name present in the 'Title' field. No title = no saving. Special characters and spaces will be removed from the name.
 
-By default, all plots are saved with grid on, box on, and hold on options. You can always add any other options after the line used to print the plot. However, you must not use the saveFigures option, otherwise you will get an error.
+By default, all plots are saved with `grid on`, `box on`, and `hold on` options. You can always add any other options after the line used to print the plot. However, you must not use the saveFigures option, otherwise you will get an error.
+
+NOTE: in a future update, a 9th option to use `grid minor` will be added.
 
 Always keep in mind that:
-- any of these characters will be interpreted as LaTeX font. To change it, change the `printSettings.m` file
-- Feel free to write symbols and expressions as you do in LaTeX.
+- any of these characters will be interpreted as LaTeX font. To change it or any font option, check the `printSettings.m` file.
+- feel free to write symbols and expressions as you would normally do in LaTeX.
 
 ## Examples
 
-### - Plot a variabl in time domain
+### - Plot a variable in time domain
 
 ```
 printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experimentTime, dataSingleE.beta*180/pi, "Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
@@ -66,6 +69,39 @@ raceLine = readtable("Melbourne_Race_Traj_MinLen.csv");
 
 
 printScriptPlot3('Optimized Trajectory', limitsR.X, limitsR.Y, limitsL.X, limitsL.Y, raceLine.x_m, raceLine.y_m, "X [m]", "Y [m]", "Limits Right", "Limits Left", "Racing Line", 1, saveFigures);
+```
+
+
+### - Plot unknown number of lines in a single Figure
+
+```
+%% Parameters and Track Info
+
+episodeNo = "Episode_";
+trackLimitsRight = readtable("Melbourne_TrackLinesDx.csv");
+trackLimitsLeft  = readtable("Melbourne_TrackLinesSx.csv");
+trackInfo  = readtable("Melbourne_TrackInfo.csv");
+
+plotStart = 1;
+plotEnd = length(episodeMeanActorLoss);
+
+csvColorsPlot                    % Used for colorbar
+
+%% Plot all episodes Data
+
+graphTitle = 'AI Attempts Path';
+[hfig1, ttl1] = printScriptMultiplePlot(graphTitle, "X [m]", "Y [m]", trackLimitsRight, trackLimitsLeft);
+for i=plotStart:plotEnd
+	pathSingleEpisode = append(path, episodeNo, sprintf('%d', i-1), ".csv");
+	dataEpisode = readtable(pathSingleEpisode);
+	
+	if (~isempty(dataEpisode))
+		plot(dataEpisode.x, dataEpisode.y, "lineWidth", 2, 'Color', colors(i, :));
+	end
+end
+lgd = legend("Track Limits Right", "Track Limits Left");
+createColorBar
+printSettings(graphTitle, hfig1, ttl1, lgd, 1, saveFigures);
 ```
 
 
