@@ -1,8 +1,8 @@
 # MatlabPrintScript
 
-Contains all necessary code to print Matlab figures with LaTeX fonts.
+Contains all necessary code to print Matlab figures with `LaTeX` fonts.
 
-It allows to print plots, multiple plots, margins, pzmaps, grids, axis equal, and an option to save the figures in different format files (`.fig`, `.svg`, `.eps`, `.png`). It also supports colorbars (future updates).
+It allows to print `plots`, `multiple plots`, `margins`, `pzmaps`, `grids`, `axis equal`, and an option to save the figures in different format files (`.fig`, `.svg`, `.eps`, `.png`). It also supports `colorbars` (future updates).
 
 ## Set Up Guide
 
