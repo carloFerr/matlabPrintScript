@@ -1,8 +1,8 @@
 # MatlabPrintScript
 
-Contains all necessary code to print Matlab figures with `LaTeX` fonts.
+Contains all necessary code to print `MATLAB figures` with `LaTeX` fonts.
 
-It allows to print `plots`, `multiple plots`, `margins`, `pzmaps`, `grids`, `axis equal`, and an option to save the figures in different format files (`.fig`, `.svg`, `.eps`, `.png`). It also supports `colorbars` (future updates).
+It allows to print `plots`, `multiple plots`, `margins`, `pzmaps`, `grids`, `axis equal`, and an option to `save figures` in different format files (`.fig`, `.svg`, `.eps`, `.png`). It also supports `colorbars` (future updates).
 
 ## Set Up Guide
 
@@ -30,11 +30,11 @@ Keep in mind the following idea: you will only need to write in one line (printS
 1. **Title:** Insert the title of the plot as `'Plot Title'`. Do not use `""` if you want to save the figure with the saveFigure option.
 2. **X-axis line:** 
 3. **Y-axis line:** 
-4. **X-axis caption:** For example, if your X-axis is time, insert 'time [s]'. Do not use '' with the saveFigure option.
-5. **Y-axis caption:** For example, if your Y-axis is velocity, insert 'velocity [m/s]'. Do not use '' with the saveFigure option.
-6. **Line Legend caption:** For example, if the line represents the velocity of a car, write 'Car Velocity'. Do not use '' with the saveFigure option.
-7. **Axis equal option:** In the case of gg-plots or XY plots, you may desire to have the "axis equal" option. Insert 0 if you don't need it, or 1 if you need it.
-8. **Save Figures option:** If you want to save your figures in .fig, .eps, .svg, and .png formats, insert 1 in this field; otherwise, insert 0. NOTE: Any figure will be saved with the name present in the 'Title' field. No title = no saving. Special characters and spaces will be removed from the name.
+4. **X-axis caption:** For example, if your X-axis is time, insert 'time [s]'. Do not use `''` with the `saveFigure` option.
+5. **Y-axis caption:** For example, if your Y-axis is velocity, insert 'velocity [m/s]'. Do not use `''` with the saveFigure option.
+6. **Line Legend caption:** For example, if the line represents the velocity of a car, write 'Car Velocity'. Do not use `''` with the saveFigure option.
+7. **Axis equal option:** In the case of gg-plots or XY plots, you may desire to have the `"axis equal"` option. Insert `0` if you don't need it, or `1` if you need it.
+8. **Save Figures option:** If you want to save your figures in `.fig`, `.eps`, `.svg`, and `.png` formats, insert `1` in this field; otherwise, insert 0. NOTE: Any figure will be saved with the name present in the `'Title'` field. No title = no saving. Special characters and spaces will be removed from the name.
 
 By default, all plots are saved with `grid on`, `box on`, and `hold on` options. You can always add any other options after the line used to print the plot. However, you must not use the saveFigures option, otherwise you will get an error.
 
