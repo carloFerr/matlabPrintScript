@@ -21,7 +21,7 @@ Keep in mind the following idea: you will only need to write in one line (`print
     - To plot a line, write `printScriptPlot`.
     - For a margin/bode diagram, type `printScriptMargin`.
     - To plot 2, 3, 4, or 5 lines on a single figure, type `printScriptPlot2`, `printScriptPlot3`, `printScriptPlot4`, or `printScriptPlot5`.
-    - If you don't know how many lines there will be in your plot, use `printScriptMultiplePlots` in a for loop ([see "Plot unknown number of lines in a single Figure" example](#Plot-unknown-number-of-lines-in-a-single-Figure)).
+    - If you don't know how many lines there will be in your plot, use `printScriptMultiplePlots` in a for loop ([see "Plot unknown number of lines in a single Figure" example](#-Plot-unknown-number-of-lines-in-a-single-Figure)).
 
 2. See [Plot Options](#Plot-Options) to understand how it works. Remember that any of those function options must be always present. In case you want to skip one, simply put `''` and the command will be ignored.
 
@@ -48,7 +48,7 @@ Always keep in mind that:
 
 #### `printScriptPlot2` and `3`, `4`, `5` options
 
-The options are the same as for `printScriptPlot1` (see printScriptPlot1 options section), however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#plot-two-variables-in-time-domain)).
+The options are the same as for `printScriptPlot1` (see printScriptPlot1 options section), however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#-Plot-two-variables-in-time-domain)).
 
 The structure you need to follow is represented in the following scheme:
 
