@@ -35,7 +35,7 @@ Keep in mind the following idea: you will only need to write in one line (`print
 4. **X-axis caption:** For example, if your X-axis is time, insert 'time [s]'. Do not use `''` with the `saveFigure` option.
 5. **Y-axis caption:** For example, if your Y-axis is velocity, insert 'velocity [m/s]'. Do not use `''` with the saveFigure option.
 6. **Line Legend caption:** For example, if the line represents the velocity of a car, write 'Car Velocity'. Do not use `''` with the saveFigure option.
-7. **Axis equal option:** In the case of gg-plots or XY plots, you may desire to have the `"axis equal"` option. Insert `0` if you don't need it, or `1` if you need it. See figures in [ example]() to understand what `axis equal` looks like.
+7. **Axis equal option:** In the case of gg-plots or XY plots, you may desire to have the `"axis equal"` option. Insert `0` if you don't need it, or `1` if you need it. See figures in [XY Plot example](Plot-Racetrack-Boundsand-Car-Trajectory-(XY-Plot,-with-axis-equal)) to understand what `axis equal` looks like.
 8. **Save Figures option:** If you want to save your figures in `.fig`, `.eps`, `.svg`, and `.png` formats, insert `1` in this field; otherwise, insert `0`. NOTE: Any figure will be saved with the name present in the `'Title'` field. No title = no saving. Special characters and spaces will be automatically and always removed from the name.
 
 By default, all plots are saved with `grid on`, `box on`, and `hold on` options. You can always add any other options after the line used to print the plot. However, you must not use the saveFigures option, otherwise you will get an error.
@@ -48,7 +48,7 @@ Always keep in mind that:
 
 #### `printScriptPlot2` and `3`, `4`, `5` options
 
-The options are the same as for `printScriptPlot1` (see [`printScriptPlot1` options section](`printScriptPlot1`-options)), however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#Plot-two-variables-in-time-domain)).
+The options are the same as for `printScriptPlot1` (see printScriptPlot1 options section), however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#Plot-two-variables-in-time-domain)).
 
 The structure you need to follow is represented in the following scheme:
 
