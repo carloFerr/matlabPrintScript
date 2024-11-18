@@ -48,7 +48,7 @@ Always keep in mind that:
 
 #### `printScriptPlot2` and `3`, `4`, `5` options
 
-The options are the same as for `printScriptPlot1` (see printScriptPlot1 options section), however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#-Plot-two-variables-in-time-domain)).
+The options are the same as for `printScriptPlot1` (see printScriptPlot1 options section), however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#Plot-two-variables-in-time-domain)).
 
 The structure you need to follow is represented in the following scheme:
 
