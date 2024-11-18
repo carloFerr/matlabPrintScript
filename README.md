@@ -27,7 +27,7 @@ Keep in mind the following idea: you will only need to write in one line (`print
 
 ### Plot Options
 
-##### `printScriptPlot1` options
+#### `printScriptPlot1` options
 
 1. **Title:** Insert the title of the plot as `'Plot Title'`. Do not use `""` if you want to save the figure with the saveFigure option.
 2. **X-axis line:** Put here the `data vector` for the X - Axis plane.
@@ -46,7 +46,7 @@ Always keep in mind that:
 - any of these characters will be interpreted as LaTeX font. To change it or any font option, check the `printSettings.m` file.
 - feel free to write symbols and expressions as you would normally do in LaTeX.
 
-##### `printScriptPlot2` and `3`, `4`, `5` options
+#### `printScriptPlot2` and `3`, `4`, `5` options
 
 The options are the same as for `printScriptPlot1`, however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#Plot-two-variables-in-time-domain)).
 
