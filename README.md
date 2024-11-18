@@ -57,8 +57,8 @@ The structure you need to follow is represented in the following scheme:
 Here is a little explaination of the general structure of the printScript module:
 
 1. **Title:** Area dedicated to the title. There must be only one title independently on the number of plotted lines.
-2. **X-axis and Y-axis lines:** This area is dedicated for plotting the lines, you must provide the right amount of XY data couples to plot 2D lines.
-5. **X-axis and Y-axis caption:** Space dedicated to the X and Y Axis caption. Notice that this is fixed size and accepts one label for X - Axis and one for Y - Axis.
+2. **X-axis and Y-axis lines:** This area is dedicated for plotting the lines, you must provide the required amount of XY data couples to plot how many 2D lines you need.
+5. **X-axis and Y-axis caption:** Space dedicated to the X and Y Axis caption. Notice that this is fixed size and accepts one label for X - Axis and one for Y - Axis. So there must always be only two spaces used by this data field.
 6. **Line Legend caption:** In this area you must name each of the plotted lines (couple of X-Y data). There must be one "name" per each line.
 7. **Axis equal option:** see [].
 8. **Save Figures option:** see [].
