@@ -59,6 +59,13 @@ printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experime
 	"Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
 ```
 
+### - Plot two variables in time domain
+
+```
+printScriptPlot2(sprintf('Episode %d Velocities', i-1), experimentTime, velocity , ...
+		experimentTime, Vx, "Time [s]", "Velocity [$m/s$]", "Vehicle Velocity", ...
+		"Vehicle Longitudinal Velocity", 0, saveFigures);
+```
 
 ### - Plot Racetrack Bounds and Car Trajectory (XY Plot, with axis equal)
 
