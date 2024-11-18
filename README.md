@@ -27,7 +27,7 @@ Keep in mind the following idea: you will only need to write in one line (`print
 
 ### Plot Options
 
-`printScriptPlot1` options:
+##### `printScriptPlot1` options
 
 1. **Title:** Insert the title of the plot as `'Plot Title'`. Do not use `""` if you want to save the figure with the saveFigure option.
 2. **X-axis line:** Put here the `data vector` for the X - Axis plane.
@@ -46,9 +46,22 @@ Always keep in mind that:
 - any of these characters will be interpreted as LaTeX font. To change it or any font option, check the `printSettings.m` file.
 - feel free to write symbols and expressions as you would normally do in LaTeX.
 
-`printScriptPlot2` and `3`, `4`, `5` options:
+##### `printScriptPlot2` and `3`, `4`, `5` options
 
-the options are the same as for `printScriptPlot1`, however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#Plot-two-variables-in-time-domain)).
+The options are the same as for `printScriptPlot1`, however, you must remind that any of the additional lines to be plotted must be followed by a corresponding `"Line Legend Caption"` ([see "Plot two variables in time domain" example](#Plot-two-variables-in-time-domain)).
+
+The structure you need to follow is represented in the following scheme:
+
+" future image to be added "
+
+Here is a little explaination of the general structure of the printScript module:
+
+1. **Title:** Area dedicated to the title. There must be only one title independently on the number of plotted lines.
+2. **X-axis and Y-axis lines:** This area is dedicated for plotting the lines, you must provide the right amount of XY data couples to plot 2D lines.
+5. **X-axis and Y-axis caption:** Space dedicated to the X and Y Axis caption. Notice that this is fixed size and accepts one label for X - Axis and one for Y - Axis.
+6. **Line Legend caption:** In this area you must name each of the plotted lines (couple of X-Y data). There must be one "name" per each line.
+7. **Axis equal option:** see [].
+8. **Save Figures option:** see [].
 
 ## Examples
 
