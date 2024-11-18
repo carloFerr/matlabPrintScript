@@ -21,7 +21,7 @@ Keep in mind the following idea: you will only need to write in one line (printS
     - To plot a line, write `printScriptPlot`.
     - For a margin/bode diagram, type `printScriptMargin`.
     - To plot 2, 3, 4, or 5 lines on a single figure, type `printScriptPlot2`, `printScriptPlot3`, `printScriptPlot4`, or `printScriptPlot5`.
-    - If you don't know how many lines there will be in your plot, use `printScriptMultiplePlots` in a for loop (see examples).
+    - If you don't know how many lines there will be in your plot, use `printScriptMultiplePlots` in a for loop ([see "Plot unknown number of lines in a single Figure" example](Plot-unknown-number-of-lines-in-a-single-Figure)).
 
 2. Now, the following options must be added. If you want to skip one, simply put `''` and the command will be ignored.
 
