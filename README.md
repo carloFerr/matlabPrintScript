@@ -13,7 +13,7 @@ Just follow this guide:
 
 ## Guide: How to Plot on Figures
 
-Keep in mind the following idea: you will only need to write in one line (printScript function/s) all you need to plot. This will keep things simple and save you a lot of time when you have to plot multiple figures.
+Keep in mind the following idea: you will only need to write in one line (`printScript` function/s) all you need to plot. This will keep things simple and save you a lot of time when you have to plot multiple figures.
 
 ### Rules
 
