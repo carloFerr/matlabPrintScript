@@ -77,6 +77,7 @@ You can also go to new line as you would normally do in matlab using `...`:
 printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experimentTime, dataSingleE.beta*180/pi, ...
 	"Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
 ```
+[Velocity_Longitudinal_at_Episode_4147.pdf](https://github.com/user-attachments/files/19427702/Velocity_Longitudinal_at_Episode_4147.pdf)
 
 ### - Plot two variables in time domain
 
@@ -85,6 +86,7 @@ printScriptPlot2(sprintf('Episode %d Velocities', i-1), experimentTime, velocity
 		experimentTime, Vx, "Time [s]", "Velocity [$m/s$]", "Vehicle Velocity", ...
 		"Vehicle Longitudinal Velocity", 0, saveFigures);
 ```
+[Velocity_Longitudinal_Comparison.pdf](https://github.com/user-attachments/files/19427711/Velocity_Longitudinal_Comparison.pdf)
 
 ### - Plot Racetrack Bounds and Car Trajectory (XY Plot, with axis equal)
 
@@ -104,7 +106,7 @@ raceLine = readtable("Melbourne_Race_Traj_MinLen.csv");
 
 printScriptPlot3('Optimized Trajectory', limitsR.X, limitsR.Y, limitsL.X, limitsL.Y, raceLine.x_m, raceLine.y_m, "X [m]", "Y [m]", "Limits Right", "Limits Left", "Racing Line", 1, saveFigures);
 ```
-
+[Trajectory_at_Episode_4147_Zoom1.pdf](https://github.com/user-attachments/files/19427681/Trajectory_at_Episode_4147_Zoom1.pdf)
 
 ### - Plot unknown number of lines in a single Figure
 
