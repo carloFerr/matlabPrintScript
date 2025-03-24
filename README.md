@@ -79,7 +79,6 @@ printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experime
 ```
 [Velocity_Longitudinal_at_Episode_4147.pdf](https://github.com/user-attachments/files/19427702/Velocity_Longitudinal_at_Episode_4147.pdf)
 ![Velocity_Longitudinal_at_Episode_4147](https://github.com/user-attachments/assets/c4a014b8-eaa5-4193-a114-26207e21b093)
-![Uploading Ve<?xml version="1.0"?>
 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
           'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:'Dialog'; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;" width="1919" height="1064" xmlns="http://www.w3.org/2000/svg"
