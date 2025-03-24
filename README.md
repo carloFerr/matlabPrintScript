@@ -1,4 +1,4 @@
-![Velocity_Longitudinal_at_Episode_4147](https://github.com/user-attachments/assets/c4a014b8-eaa5-4193-a114-26207e21b093)# MatlabPrintScript
+# MatlabPrintScript
 
 Contains all necessary code to print `MATLAB figures` with `LaTeX` fonts and save them.
 
@@ -78,6 +78,7 @@ printScriptPlot1(sprintf('Episode %d Sideslip Angle', i-1), dataSingleE.experime
 	"Time [s]", "Angle [Deg]", "Sideslip Angle at Vehicle's COG", 0, saveFigures);
 ```
 [Velocity_Longitudinal_at_Episode_4147.pdf](https://github.com/user-attachments/files/19427702/Velocity_Longitudinal_at_Episode_4147.pdf)
+![Velocity_Longitudinal_at_Episode_4147](https://github.com/user-attachments/assets/c4a014b8-eaa5-4193-a114-26207e21b093)
 ![Uploading Ve<?xml version="1.0"?>
 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
           'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
