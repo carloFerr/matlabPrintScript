@@ -633,7 +633,6 @@ printScriptPlot2(sprintf('Episode %d Velocities', i-1), experimentTime, velocity
   ></g
 ></svg
 >
-Uploading Velocity_Longitudinal_Comparison.svg…]()
 
 ### - Plot Racetrack Bounds and Car Trajectory (XY Plot, with axis equal)
 
@@ -935,7 +934,6 @@ printScriptPlot3('Optimized Trajectory', limitsR.X, limitsR.Y, limitsL.X, limits
   ></g
 ></svg
 >
-loading Trajectory_at_Episode_4147_Zoom1.svg…]()
 
 
 ### - Plot unknown number of lines in a single Figure
