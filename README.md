@@ -88,6 +88,7 @@ printScriptPlot2(sprintf('Episode %d Velocities', i-1), experimentTime, velocity
 		"Vehicle Longitudinal Velocity", 0, saveFigures);
 ```
 [Velocity_Longitudinal_Comparison.pdf](https://github.com/user-attachments/files/19427711/Velocity_Longitudinal_Comparison.pdf)
+![Velocity_Longitudinal_Comparison](https://github.com/user-attachments/assets/d2661d7e-6e19-4e94-8e46-1e97dba1a1d8)
 
 ### - Plot Racetrack Bounds and Car Trajectory (XY Plot, with axis equal)
 
@@ -108,6 +109,7 @@ raceLine = readtable("Melbourne_Race_Traj_MinLen.csv");
 printScriptPlot3('Optimized Trajectory', limitsR.X, limitsR.Y, limitsL.X, limitsL.Y, raceLine.x_m, raceLine.y_m, "X [m]", "Y [m]", "Limits Right", "Limits Left", "Racing Line", 1, saveFigures);
 ```
 [Trajectory_at_Episode_4147_Zoom1.pdf](https://github.com/user-attachments/files/19427681/Trajectory_at_Episode_4147_Zoom1.pdf)
+![Trajectory_at_Episode_4147_Zoom1](https://github.com/user-attachments/assets/c8080e9b-9d9d-4f39-a8d8-f451a8fd403e)
 
 ### - Plot unknown number of lines in a single Figure
 
